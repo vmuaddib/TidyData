@@ -26,6 +26,7 @@ After setting the source directory for the files, read into tables the data loca
 * x_test.txt
 * y_test.txt
 
+
 * The subjects and activity labels were read, transformed to factors
 * Test data df and train data df are read and each of them merged with the subjects and activities - using cbind
 * Test data and train data are merged into on df - using rbind
@@ -61,15 +62,15 @@ Renamed the columns of the data frame to comply with the tidy data standards. Th
 * `activity` - The type of activity performed when the corresponding measurements were taken
 
 ## Measurements
- [1] "subject"    
- * Pearson 1 to 24                    
+ [1] "subject"
+ 	Pearson 1 to 24                    
  [2] "activity"
-* WALKING: subject was walking during the test
-* WALKING_UPSTAIRS: subject was walking up a staircase during the test
-* WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
-* SITTING: subject was sitting during the test
-* STANDING: subject was standing during the test
-* LAYING: subject was laying down during the test                    
+	WALKING: subject was walking during the test
+	WALKING_UPSTAIRS: subject was walking up a staircase during the test
+	WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
+	SITTING: subject was sitting during the test
+	STANDING: subject was standing during the test
+	LAYING: subject was laying down during the test                    
  [3] "timebodyaccmeax"                
  [4] "timebodyaccmeay"                
  [5] "timebodyaccmeaz"                

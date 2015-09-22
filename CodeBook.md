@@ -63,14 +63,14 @@ Renamed the columns of the data frame to comply with the tidy data standards. Th
 
 ## Measurements
  [1] "subject"
- 	Pearson 1 to 24                    
+Pearson 1 to 24                    
  [2] "activity"
-	WALKING: subject was walking during the test
-	WALKING_UPSTAIRS: subject was walking up a staircase during the test
-	WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
-	SITTING: subject was sitting during the test
-	STANDING: subject was standing during the test
-	LAYING: subject was laying down during the test                    
+WALKING: subject was walking during the test
+WALKING_UPSTAIRS: subject was walking up a staircase during the test
+WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
+SITTING: subject was sitting during the test
+STANDING: subject was standing during the test
+LAYING: subject was laying down during the test                    
  [3] "timebodyaccmeax"                
  [4] "timebodyaccmeay"                
  [5] "timebodyaccmeaz"                
@@ -131,7 +131,7 @@ Renamed the columns of the data frame to comply with the tidy data standards. Th
 [60] "frequencybodygyrostz"           
 [61] "frequencybodyaccmagmea"         
 [62] "frequencybodyaccmagst"          
-[63] "frequencybodybodyaccjerkmagmea" 
+[63] "frequencybodybodyaccjerkmagmea"
 [64] "frequencybodybodyaccjerkmagst"  
 [65] "frequencybodybodygyromagmea"    
 [66] "frequencybodybodygyromagst"     

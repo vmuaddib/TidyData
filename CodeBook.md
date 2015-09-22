@@ -26,35 +26,34 @@ After setting the source directory for the files, read into tables the data loca
 - x_test.txt
 - y_test.txt
 
-1.1 The subjects and activity labels were read, transformed to factors
-1.2 Test data df and train data df are read and each of them merged with the subjects and activities - using cbind
-1.3 Test data and train data are merged into on df - using rbind
+* The subjects and activity labels were read, transformed to factors
+* Test data df and train data df are read and each of them merged with the subjects and activities - using cbind
+* Test data and train data are merged into on df - using rbind
 
 
 #### Section 2. Extract only the measurements on the mean and standard deviation for each measurement. 
 
-2.1 The values that contain -mean() and -std() are filtered. 
- !!! why not the others containing mean, std? "MeanFreq is not the mean messurment of a specific measurment, rather as it suggests it is: Weighted average of the frequency components to obtain a mean frequency"
-2.2 Besides the filtered columne, the "subjects" and "activities" were also kept.
+* The values that contain -mean() and -std() are filtered. 
+* !!! why not the others containing mean, std? "MeanFreq is not the mean messurment of a specific measurment, rather as it suggests it is: Weighted average of the frequency components to obtain a mean frequency"
+* Besides the filtered columne, the "subjects" and "activities" were also kept.
 
 #### Section 3. Use descriptive activity names to name the activities in the data set
-3.1 The 1-6 values for activity factor were replaces with with meanngful values  like WALKING, WALKING_UPSTAIRS etc.
-Also made them lowercase
-3.2 The pearson values were not replace because "Pearson 1" is not more meaningful then "1"
+* The 1-6 values for activity factor were replaces with with meanngful values  like WALKING, WALKING_UPSTAIRS etc.Also made them lowercase
+* The pearson values were not replace because "Pearson 1" is not more meaningful then "1"
 
 #### Section 4. Appropriately label the data set with descriptive activity names.
-4.1 rename the columns of the data frame to comply with the tidy data standards. The following actions were taken
-	* remove the alphanumeric "()"
-	* remove the alphanumeric "-"
-	* remove the alphanumeric ","
-	* rename "f" to "frequency"
-	* rename "t" to "time"
-	* make all colums lowercase
+Renamed the columns of the data frame to comply with the tidy data standards. The following actions were taken:
+	- remove the alphanumeric "()"
+	- remove the alphanumeric "-"
+	- remove the alphanumeric ","
+	- rename "f" to "frequency"
+	- rename "t" to "time"
+	- make all colums lowercase
 
 #### Section 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
-5.1 The data frame was meltet, id = "activity","subject" and  measure.vars = all the other columns
-5.2 Datagrame casted from the melted data frame to comply with the request
-5.3 Final dataframe writen to file
+* The data frame was meltet, id = "activity","subject" and  measure.vars = all the other columns
+* Datagrame casted from the melted data frame to comply with the request
+* Final dataframe writen to file
 
 ## Identifiers
 

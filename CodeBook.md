@@ -17,14 +17,14 @@ The following steps were taken to get the data to the current form
 
 #### 1. Merge the training and the test sets to create one data set.
 After setting the source directory for the files, read into tables the data located in
-	* features.txt
-	* activity_labels.txt
-	* subject_train.txt
-	* x_train.txt
-	* y_train.txt
-	* subject_test.txt
-	* x_test.txt
-	* y_test.txt
+* features.txt
+* activity_labels.txt
+* subject_train.txt
+* x_train.txt
+* y_train.txt
+* subject_test.txt
+* x_test.txt
+* y_test.txt
 
 * The subjects and activity labels were read, transformed to factors
 * Test data df and train data df are read and each of them merged with the subjects and activities - using cbind
@@ -43,12 +43,12 @@ After setting the source directory for the files, read into tables the data loca
 
 #### 4. Appropriately label the data set with descriptive activity names.
 Renamed the columns of the data frame to comply with the tidy data standards. The following actions were taken:
-	* remove the alphanumeric "()"
-	* remove the alphanumeric "-"
-	* remove the alphanumeric ","
-	* rename "f" to "frequency"
-	* rename "t" to "time"
-	* make all colums lowercase
+* remove the alphanumeric "()"
+* remove the alphanumeric "-"
+* remove the alphanumeric ","
+* rename "f" to "frequency"
+* rename "t" to "time"
+* make all colums lowercase
 
 #### 5. Create a second, independent tidy data set with the average of each variable for each activity and each subject. 
 * The data frame was meltet, id = "activity","subject" and  measure.vars = all the other columns
@@ -62,14 +62,14 @@ Renamed the columns of the data frame to comply with the tidy data standards. Th
 
 ## Measurements
  [1] "subject"    
- 		Pearson 1 to 24                    
+ * Pearson 1 to 24                    
  [2] "activity"
-	* WALKING: subject was walking during the test
-	* WALKING_UPSTAIRS: subject was walking up a staircase during the test
-	* WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
-	* SITTING: subject was sitting during the test
-	* STANDING: subject was standing during the test
-	* LAYING: subject was laying down during the test                    
+* WALKING: subject was walking during the test
+* WALKING_UPSTAIRS: subject was walking up a staircase during the test
+* WALKING_DOWNSTAIRS: subject was walking down a staircase during the test
+* SITTING: subject was sitting during the test
+* STANDING: subject was standing during the test
+* LAYING: subject was laying down during the test                    
  [3] "timebodyaccmeax"                
  [4] "timebodyaccmeay"                
  [5] "timebodyaccmeaz"                
